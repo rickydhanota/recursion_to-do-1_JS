@@ -14,8 +14,10 @@ console.log(rSigma(5));
 
 function rFract(num){
     if(num>0){
+        num = Math.trunc(num);
         return rFract(num-1)*num; //
     }
+    return 1;
 }
 
-console.log(rFract(5));
+console.log(rFract(6.5));
